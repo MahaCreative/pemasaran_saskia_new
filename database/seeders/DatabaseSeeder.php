@@ -3,6 +3,9 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\TipeRumah;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -12,11 +15,35 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+        User::create([
+            'name' => 'manager',
+            'email' => 'manager@gmail.com',
+            'phone' => '085334703292',
+            'email_verified_at' => now(),
+            'password' => bcrypt('password123'),
+            'role' => 'manager',
+        ]);
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        User::create([
+            'name' => 'marketing',
+            'email' => 'marketing@gmail.com',
+            'phone' => fake()->phoneNumber(),
+            'password' => bcrypt('password123'),
+            'role' => 'marketing',
+            'email_verified_at' => now(),
+        ]);
+        // Seed slider
+        \App\Models\Slider::factory(5)->create();
+
+        // Seed kantor profile
+        \App\Models\KantorProfile::factory()->create();
+
+        // Seed promosi
+        \App\Models\Promosi::factory(5)->create();
+        TipeRumah::factory(5)->create();
+        // Seed rumah dan gambar rumah
+        // \App\Models\Rumah::factory(10)->create()->each(function ($rumah) {
+        //     \App\Models\GambarRumah::factory(2)->create(['rumah_id' => $rumah->id]);
+        // });
     }
 }

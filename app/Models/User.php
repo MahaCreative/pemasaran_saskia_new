@@ -21,6 +21,10 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
+        'phone',
+        'otp',
+        'avatar',
     ];
 
     /**
@@ -42,4 +46,14 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function permintaanPembelians()
+    {
+        return $this->hasMany(\App\Models\PermintaanPembelian::class);
+    }
+
+    public function pembayaranCicilans()
+    {
+        return $this->hasMany(\App\Models\PembayaranCicilan::class);
+    }
 }
