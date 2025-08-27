@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
+
 import PrimaryButton from "@/Components/PrimaryButton";
 import LoadingOverlay from "@/Components/LoadingOverlay";
 import { useLoading } from "@/Hooks/useLoading";
 import ResponseAlert from "@/Hooks/ResponseAlert";
+import AuthLayout from "@/Layouts/AuthLayout";
 
 const dummyPromosi = [
     {
@@ -104,7 +105,7 @@ export default function PromosiManagement() {
     };
 
     return (
-        <AuthenticatedLayout title="Kelola Promosi - Manager">
+        <AuthLayout title="Kelola Promosi - Manager">
             <div className="max-w-5xl mx-auto py-10 px-4">
                 <h1 className="text-3xl font-bold text-green-700 mb-6">
                     Kelola Promosi
@@ -205,6 +206,6 @@ export default function PromosiManagement() {
                     </tbody>
                 </table>
             </div>
-        </AuthenticatedLayout>
+        </AuthLayout>
     );
 }

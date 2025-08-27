@@ -1,5 +1,6 @@
 import React from "react";
-import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
+
+import AuthLayout from "@/Layouts/AuthLayout";
 
 export default function SalesStatistics() {
     // Dummy data for sales statistics
@@ -15,7 +16,7 @@ export default function SalesStatistics() {
     ];
 
     return (
-        <AuthenticatedLayout title="Statistik Penjualan - Manager">
+        <AuthLayout title="Statistik Penjualan - Manager">
             <div className="max-w-5xl mx-auto py-10 px-4">
                 <h1 className="text-3xl font-bold text-green-700 mb-6">
                     Statistik Penjualan Rumah
@@ -52,6 +53,6 @@ export default function SalesStatistics() {
                     </ul>
                 </div>
             </div>
-        </AuthenticatedLayout>
+        </AuthLayout>
     );
 }

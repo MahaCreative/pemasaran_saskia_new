@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
+
 import PrimaryButton from "@/Components/PrimaryButton";
+import AuthLayout from "@/Layouts/AuthLayout";
 
 const dummyRumah = [
     { id: 1, nama: "Rumah A", tipe: "Tipe 36", harga: 500000000 },
@@ -55,7 +56,7 @@ export default function Rumah() {
     };
 
     return (
-        <AuthenticatedLayout title="Kelola Rumah - Marketing">
+        <AuthLayout title="Kelola Rumah - Marketing">
             <div className="max-w-5xl mx-auto py-10 px-4">
                 <h1 className="text-3xl font-bold text-green-700 mb-6">
                     Kelola Data Rumah
@@ -145,6 +146,6 @@ export default function Rumah() {
                     </tbody>
                 </table>
             </div>
-        </AuthenticatedLayout>
+        </AuthLayout>
     );
 }
