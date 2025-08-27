@@ -12,7 +12,7 @@ class KantorProfileFactory extends Factory
     public function definition()
     {
         return [
-            'nama_pemilik' => fake()->name,
+            'nama_pemilik' => "Muh Sultan Syam, S.Ars",
             'foto_pemilik' => fake()->imageUrl(640, 480, 'business', true, 'Faker'),
             'nama_kantor' => 'Maccinna House',
             'foto_kantor' => fake()->imageUrl(640, 480, 'business', true, 'Faker'),
@@ -20,8 +20,8 @@ class KantorProfileFactory extends Factory
             'alamat' => fake()->address(),
             'telepon' => fake()->phoneNumber(),
             'email' => fake()->email(),
-            'website' => 'maccinnahouse',
-            'deskripsi' => fake()->paragraph(),
+            'website' => 'https://macinnahouse.site',
+            'deskripsi' => 'Jl. Atiek Soetedja Provinsi Suawesi Barat Kabupaten Mamuju',
             'lat' => fake()->latitude(),
             'long' => fake()->longitude(),
         ];

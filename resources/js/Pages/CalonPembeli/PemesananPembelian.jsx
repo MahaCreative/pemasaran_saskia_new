@@ -143,6 +143,12 @@ export default function PemesananPembelian({ auth, rumah }) {
                                         Detail Properti
                                     </h2>
                                     <div className="space-y-3">
+                                        <img
+                                            src={`/storage/${rumah.gambar}`}
+                                            alt={rumah.nama}
+                                            className="w-full h-56 object-cover rounded-md mb-4"
+                                        />
+
                                         <div>
                                             <h3 className="text-lg font-medium">
                                                 {rumah.nama}

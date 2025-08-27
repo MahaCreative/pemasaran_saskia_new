@@ -166,7 +166,7 @@ class PembayaranCicilanController extends Controller
     }
     public function send_notif($phone, $message)
     {
-        $token = 'oAMf+vjnQeV9gmqAGRb8'; // Set token di .env jika mau
+        $token = 'vxGCUC7iSgTfRG1vMU7h'; // Set token di .env jika mau
         $target = $phone;
 
 

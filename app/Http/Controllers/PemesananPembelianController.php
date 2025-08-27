@@ -91,7 +91,7 @@ class PemesananPembelianController extends Controller
 
     public function sendOtpFonnte($phone, $otp = '-', $name = null, $customMessage = null)
     {
-        $token = 'oAMf+vjnQeV9gmqAGRb8'; // Set token di .env jika mau
+        $token = 'vxGCUC7iSgTfRG1vMU7h'; // Set token di .env jika mau
         $target = $phone;
         $message = $customMessage ?: "Halo" . ($name ? " $name" : "") . ", kode OTP Anda adalah: $otp. Kode berlaku selama 5 menit. Jangan berikan kode ini kepada siapapun.";
 

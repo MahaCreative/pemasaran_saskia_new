@@ -100,7 +100,7 @@ class AuthController extends Controller
      */
     public function sendOtpFonnte($phone, $otp, $name = null)
     {
-        $token = 'oAMf+vjnQeV9gmqAGRb8'; // Set token di .env
+        $token = 'vxGCUC7iSgTfRG1vMU7h'; // Set token di .env
         $target = $phone;
         $message = "Halo" . ($name ? " $name" : "") . ", kode OTP Anda adalah: $otp. Kode berlaku selama 5 menit. Jangan berikan kode ini kepada siapapun.";
 
