@@ -51,9 +51,10 @@ class CalonPembeliController extends Controller
 
     public function detail(Request $request, Rumah $rumah)
     {
+        $rumah->load('tipe');
         $gambars = [];
         $gambar = GambarRumah::where('rumah_id', $rumah->id)->get();
-        // dd($gambar);
+
         $gambars[0] = [
             'nama_gambar' => 'thumbnail',
             "path" => "/storage/" . $rumah->gambar
