@@ -77,7 +77,7 @@ export default function PemesananPembelian({ auth, rumah }) {
     const minDate = new Date().toISOString().split("T")[0];
 
     return (
-        <GuestLayout>
+        <GuestLayout judul={"Pemesanan Pembelian"}>
             {/* MODAL SYARAT & KETENTUAN */}
             <Dialog open={openModal} disableEscapeKeyDown>
                 <DialogTitle>Syarat & Ketentuan</DialogTitle>

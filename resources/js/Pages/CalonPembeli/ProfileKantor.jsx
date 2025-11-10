@@ -3,7 +3,7 @@ import React from "react";
 
 export default function ProfileKantor({ profile }) {
     return (
-        <GuestLayout>
+        <GuestLayout judul={"Profile Kantor"}>
             <div className="min-h-screen bg-green-50 flex items-center justify-center py-10 px-4">
                 <div className="bg-white rounded-2xl shadow-xl overflow-hidden max-w-4xl w-full">
                     {profile ? (

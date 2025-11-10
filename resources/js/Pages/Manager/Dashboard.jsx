@@ -91,7 +91,7 @@ export default function ManagerDashboard({
     };
 
     return (
-        <AuthLayout>
+        <AuthLayout title={"Dashboard"}>
             <div className="p-6 space-y-8">
                 {/* Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5  gap-6">

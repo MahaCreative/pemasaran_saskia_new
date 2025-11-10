@@ -48,7 +48,7 @@ export default function BookingKunjungan({ rumah }) {
     const minDate = new Date().toISOString().split("T")[0];
 
     return (
-        <GuestLayout>
+        <GuestLayout judul={"Booking Kunjungan"}>
             <Head title={`Booking Kunjungan - ${rumah.nama}`} />
 
             <div className="py-12 bg-gray-100 min-h-screen">

@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Promosi({ promosi }) {
     return (
-        <GuestLayout>
+        <GuestLayout judul={"Promosi"}>
             <div className="min-h-screen bg-gradient-to-br from-green-50 to-white py-10 px-4">
                 <div className="max-w-5xl mx-auto">
                     <h2 className="text-3xl font-extrabold text-green-700 mb-8 text-center">

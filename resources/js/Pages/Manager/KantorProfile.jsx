@@ -65,7 +65,7 @@ export default function KantorProfile({ auth, profile }) {
     };
 
     return (
-        <AuthLayout>
+        <AuthLayout title={"Profile Kantor"}>
             <Head title="Profil Kantor" />
             <div className="py-12">
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
