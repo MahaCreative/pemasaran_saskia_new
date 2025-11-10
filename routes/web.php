@@ -18,6 +18,8 @@ use App\Http\Controllers\Manager\KantorProfileController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\Marketing\BookingKunjunganController as MarketingBookingKunjunganController;
 use App\Http\Controllers\Manager\LaporanController;
+use App\Http\Controllers\OfferMailController;
+
 // Auth routes
 Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
 Route::post('/register', [AuthController::class, 'register']);
@@ -143,3 +145,6 @@ Route::post('/manager/laporan/pembayaran-cicilan', [LaporanController::class, 'l
 // Profile routes
 Route::middleware(['auth'])->group(function () {});
 // });
+
+Route::get('/send-offer', [OfferMailController::class, 'sendOffer']);
+Route::get('/preview-offer', [OfferMailController::class, 'previewOffer']);
